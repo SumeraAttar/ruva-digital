@@ -1,0 +1,101 @@
+.step {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  color: red;
+}
+
+.service-btn,
+.continue-btn,
+.back-btn,
+.send-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid red;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.service-btn {
+  color: #000 !important;
+  background-color: #fff !important;
+  border: 1px solid red !important;
+}
+
+.service-btn.selected {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.continue-btn,
+.send-btn {
+  background: red;
+  color: white;
+}
+
+.continue-btn[disabled] {
+  background: grey;
+  cursor: not-allowed;
+}
+
+.back-btn {
+  background: #fff !important;
+  color: black !important;
+  align-items: flex-start !important;
+  left: 0px !important;
+  justify-content: left !important;
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+textarea,
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .service-btn,
+  .continue-btn,
+  .back-btn,
+  .send-btn {
+    width: 90%;
+    font-size: 0.9em;
+  }
+
+  textarea,
+  input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-btn,
+  .continue-btn,
+  .back-btn,
+  .send-btn {
+    width: 80%;
+    font-size: 0.8em;
+  }
+
+  textarea,
+  input {
+    width: 80%;
+  }
+}

@@ -1,0 +1,292 @@
+.arrow{
+    margin-left: 100px;
+    background-color: #cccccc;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Example Adjustment */
+  .contain {
+    /* Adjust padding and width as needed */
+    padding: 0 20px; /* Example padding */
+    max-width: 100%; /* Ensure the container does not exceed viewport width */
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+  
+  .arrow i{
+    font-size: 25px;
+    font-weight: 900;
+    color: black;
+  }
+  .about{
+    color: rgb(23, 23, 165);
+    font-weight: 800;
+    margin-left: 80px;
+    margin-top: 40px;
+  }
+  .contain p{
+    font-weight: 800;
+    font-size: 30px;
+  }
+  .ruva span{
+    font-size: 90px;
+    font-weight: 600;
+    margin:0;
+  }
+  .ruva span:first-child{
+    color: rgb(60, 202, 136);
+    position: absolute;
+    top : 0;
+    left : 8%;
+  }
+  .ruva span:nth-child(2){
+    color : rgb(235, 114, 114);
+    position: absolute;
+    top : 24%;
+    left : 13%;
+  }
+  .ruva span:nth-child(3){
+    color: rgb(41, 41, 214);
+    position: absolute;
+    left : 8%;
+    top : 43%;
+  }
+  .ruva span:nth-child(4){
+    color: blueviolet;
+    position: absolute;
+    left : 12%;
+    top: 65%;
+  }
+  .ruva1 span:first-child{
+        width : 40px;
+        height: 40px;
+        background-color: rgb(118, 234, 234);
+        border-radius: 50%;
+        position: absolute;
+        top : 0%;
+        left : 20px;
+  }
+  .ruva1 span:nth-child(2){
+    background-color:rgb(60, 202, 136);
+    width: 40px;
+    height : 40px;
+    position: absolute;
+    top: 0%;
+    left: 65px;
+    border-radius: 0 20px 20px 0;
+  }
+  .ruva1 span:nth-child(3){
+    background-color: rgb(41, 41, 214);
+    width: 40px;
+    height : 40px;    
+    position: absolute;
+    top : 38%;
+    left: 20px;
+    border-radius: 0 0 0 90%;
+  }
+  .ruva1 span:nth-child(4){
+    background-color: rgb(235, 114, 114);
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    position: absolute;
+    top : 38%;
+    left : 65px;
+    border-radius: 0 0 90% 0;
+  }
+  .ruva1 span:nth-child(5){
+    background-color: rgb(41, 41, 214);
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    position: absolute;
+    top : 55%;
+    left : 120px;
+    border-radius: 0 20px 20px 0;
+  }
+  .ruva1 {
+    -webkit-box-reflect: right;
+    -webkit-reflection-offset: 200px;
+  }
+  .ruva2{
+    position: relative;
+    top: -150px;
+    left :85%;
+  }
+  .ruva2 span{
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .ruva2 span:first-child{
+    color: rgb(60, 202, 136);
+    position: absolute;
+    top:-10%;
+    left : 0;
+    transform: rotateY(-180deg);
+  }
+  .ruva2 span:nth-child(2){
+    color: rgb(232, 127, 98);
+    position: absolute;
+    left: -50px;
+    top : 0px;
+    transform: rotate(270deg);
+  }
+  .ruva2 span:nth-child(3){
+    color:rgb(41, 41, 214);
+    position: absolute;
+    left: 5px;
+    top: 50px;
+  }
+  .ruva2 span:nth-child(4){
+    color: blueviolet;
+    position: absolute;
+    top : 50px;
+    left: -50px;
+  }
+  .section2{
+    background-color: rgb(41, 54, 196);;
+    text-align: justify;
+  }
+  .section2 h1{
+    font-weight: 600;
+    margin:  3% 8%;
+  }
+  .section2 p{
+    font-weight: 300;
+    margin:  3% 8%;
+  }
+  .section2 h3{
+    color: rgb(198, 98, 98);
+    text-transform: capitalize;
+    margin:  3% 8%;
+  }
+  .section3{
+    margin:  3% 8%;
+    display: flex;
+  }
+  .section3 div{
+    font-size: 22px;
+    font-weight: 700;
+    background-color: white;
+    color: blue;
+    border-radius: 40px;
+    text-align: center;
+    padding: 8px 5px;
+    margin: 10px;
+  }
+  .section3 div:hover{
+    background-color:  rgb(243, 97, 97);
+    color: #ffffff;
+  }
+  .section4 h2, .section4 h3{
+    font-weight: 600;
+    margin: 25px 100px;
+  }
+  .section4 ul li{
+    margin: 20px;
+    font-weight: 600;
+  }
+  
+  
+  /* Media Queries */
+  @media (max-width: 992px) {
+    .arrow {
+      margin-left: 50px;
+    }
+    .about {
+      margin-left: 50px;
+    }
+    .contain p {
+      font-size: 18px;
+    }
+    .ruva {
+      padding: 100px;
+    }
+    .ruva span {
+      font-size: 60px;
+    }
+    .ruva1 {
+      padding: 30px;
+      width: 300px;
+    }
+    .ruva2 {
+      top: -100px;
+    }
+    .section2 h1,
+    .section2 p,
+    .section2 h3 {
+      margin: 3% 5%;
+    }
+    .section3 {
+      flex-wrap: wrap;
+    }
+    .section3 div {
+      margin: 10px 0;
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+  @media (max-width: 768px) {
+    .arrow {
+      margin-left: 30px;
+    }
+    .about {
+      margin-left: 30px;
+    }
+    .ruva {
+      padding: 50px;
+    }
+    .ruva span {
+      font-size: 35px;
+    }
+    .ruva1 {
+      padding: 20px;
+      width: 200px;
+    }
+    .ruva2 {
+      top: -50px;
+    }
+    .section2 h1,
+    .section2 p,
+    .section2 h3 {
+      margin: 3% 3%;
+    }
+    .section3 div {
+      flex: 1 1 calc(33% - 20px);
+    }
+  }
+  
+  
+  .main-content {
+    padding: 20px;
+    margin-top: 108px;
+  }
+  
+  .about-intro {
+    text-align: center;
+  }
+  
+  .about-intro h1 {
+    font-size: 1em;
+    font-family: 'inter';
+   
+  }
+  
+  .about-details p {
+    margin: 15px 0;
+    font-family: 'inter';
+    line-height: 38px;
+   
+  }
+  
+  .more-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    justify-content: flex-start;
+    color: #f90a0a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: left;
+  }

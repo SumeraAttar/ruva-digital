@@ -1,0 +1,134 @@
+/* src/Header.css */
+.header {
+  padding: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #000;
+}
+
+.contact {
+  background-color: black;
+  color: hsl(0, 33%, 96%);
+  text-align: left;
+  padding: 10px;
+  padding-left: 92px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+ 
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: nowrap;
+  padding: 0px 20px;
+  flex-direction: row;
+  margin-top: 10px;
+ 
+  justify-content: space-around;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 20;
+  margin: 20;
+ justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-btn {
+  background-color: #000;
+  color: white !important;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #e04e4e;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0;
+    background: #fff;
+    border-bottom: 1px solid black;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    display: none; /* Hide navigation links initially on mobile */
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .contact-btn {
+    margin-top: 10px;
+    order: 2; /* Place the button below the navigation links */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    width: 100%;
+    text-align: center;
+    display: flex; /* Show navigation links on mobile */
+  }
+
+  .contact-btn {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    order: 2; /* Place the button below the navigation links */
+  }
+
+  .logo img {
+    width: 80px; /* Adjust logo size */
+    height: 80px;
+  }
+}
+
+/* Override default styles for NavLink */
+.nav-links a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #e04e4e; /* Hover color */
+}
+
+.nav-links .active {
+  color: #e04e4e; /* Active link color */
+}

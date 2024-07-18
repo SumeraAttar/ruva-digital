@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.intro-section p{
+  font-weight: 900;
+  font-size: 36px;
+  color: black;
+  padding: 20px 50px;
+  text-align: left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.intro-section {
+  background-color:#fff;
+  padding: 50px 40px;
+  margin: 50px ;
+  margin-bottom: 100px;
+}
+
+.intro-section img {
+  width: 100%;
+  margin-top: 20px;
+ 
+}
+
+.content-section {
+  background-color: #9e1b7f;
+  color: white;
+  padding: 50px 60px;
+}
+.content-section p{
+  padding: 10px 30px;
+  padding-right: 20%;
+  font-size: 16px;
+  text-align: justify;
+}
+.content-section h3{
+  color: rgb(35, 22, 108);
+  font-size: 16px;
+  font-weight: bold;
+}
+.content-section .serv{
+  font-size:  22px;
+  font-weight: bold;
+}
+.service-tags span {
+  display: inline-block;
+  background-color: #ffffff;
+  color: rgb(34, 34, 147);
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px 12px;
+  border-radius: 25px;
+  border: 2px solid rgb(34, 34, 147);
+}
+.service-tags span:hover{
+  color: white;
+  background-color: rgb(34, 34, 147);
+}
+
+.quote-section {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+}
+
+.quote-section button {
+  background-color: #ff6600;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+
+
+.shape-container {
+position: relative;
+display: flex;
+justify-content: center;
+height: 400px;
+box-sizing: border-box;
+}
+.cir,.cir1{
+background-color: green;
+padding : 20px;
+width: 20px;
+border-radius : 50%;
+position: absolute;
+top : 29px;
+left: 30%;
+animation: example3 2s 10s infinite alternate;
+}
+.cir1{
+padding : 30px;
+position: absolute;
+left : 40%;
+top : 19%;
+z-index: 1;
+animation: example2 4s linear 0.5s infinite alternate;
+}
+.filled{
+display : inline-block;
+border-right: 20px solid #F76955;
+border-left: 20px solid #fff;
+border-top: 20px solid #F76955;;
+border-bottom: 20px solid #fff;
+border-radius: 500px;
+transform : rotate(45deg);
+position: absolute;
+left : 45%;
+top : 35px;
+animation: example1 4s linear 1s infinite alternate;
+}
+.unfilled{
+width: 20px;
+padding: 20px;
+background-color: #fff;
+border-radius: 50%;
+animation: example1 4s linear 5s infinite alternate;
+
+}
+.diagonal{
+background-color: #FF88A5;
+width: 80px;
+padding: 15px 10px;
+border-radius: 20px;
+position: absolute;
+top : 29%;
+left : 55%;
+transform: rotate(10deg);
+animation: example1 4s linear 0.5s infinite alternate;
+}
+.star{
+animation: example1 4s linear 0.5s infinite alternate;
+}
+.line{
+width:  200px;
+padding: 5px 80px;
+border-radius: 20px;
+background-color: violet;
+position: absolute;
+top: 35%;
+transform: rotate(10deg);
+z-index: 1;
+animation: example1 4s linear 0.5s infinite alternate;
+
+}
+.square1{
+width: 70px;
+height: 60px;
+background-color: blue;
+border-radius: 12px;
+position: absolute;
+top : 40%;
+left: 27%;
+transform: rotate(-20deg);
+z-index: 1;
+}
+.triangle{
+border-top : 50px solid #fff;
+border-right : 80px solid #EF259B;
+border-bottom: 50px solid #fff;
+border-radius: 2px;
+position: absolute;
+top : 38%;
+left: 42%;
+display: inline;
+}
+.half-circle{
+border-bottom: 40px solid #93D26F;
+border-top: 40px solid #fff;
+border-left: 40px solid #93D26F;
+border-right: 40px solid #fff;
+display: inline-block;
+border-radius: 200px;
+position: absolute;
+top : 40%;
+left : 58%;
+transform: rotate(5deg);
+}
+.bigcir{
+width: 150px;
+height: 150px;
+background-color: rgb(235, 203, 44);
+border-radius: 500px;
+display: inline-block;
+position: absolute;
+top :63%;
+left :35%;
+}
+.smallcir{
+width: 30px;
+height: 30px;
+border-radius : 20px;
+background-color: rgb(206, 173, 237);
+position: absolute;
+top : 80%;
+left: 60px;
+}
+@keyframes example1{
+from {
+    transform : rotate(30deg);
+}
+to {
+    transform : rotate(0deg);
+}
+}
+@keyframes example3 {
+from{
+  top : 20%;
+}
+
+}
+@keyframes example2 {
+from{
+  top : -15px;
+}
+
+}

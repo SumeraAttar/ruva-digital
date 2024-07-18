@@ -1,0 +1,159 @@
+.marketing-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h1 {
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 2.6em;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.content-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 155px;
+}
+
+.content-item.reverse {
+  flex-direction: column-reverse;
+}
+
+.image-wrapper {
+  width: 100%;
+  max-width: 440px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-wrapper {
+  max-width: 600px;
+}
+
+.text-wrapper h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.text-wrapper p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.text-wrapper button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 21px;
+}
+
+.text-wrapper button:hover {
+  background-color: #ff4b4b;
+}
+
+.rotating-image {
+  position: absolute;
+  width: 175px !important; /* Reduced size */
+  height: 181px !important; /* Reduced size */
+  animation: rotate 5s linear infinite;
+}
+
+
+.rotating-image1 {
+  position: absolute;
+  width: 170px !important; /* Reduced size */
+  height: 170px !important; /* Reduced size */
+  animation: rotate 5s linear infinite;
+}
+
+.small-logo {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .section-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .content-item {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .content-item.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .image-wrapper {
+    flex: 1;
+  }
+
+  .text-wrapper {
+    flex: 2;
+    margin-left: 55px;
+  }
+
+  .text-wrapper.reverse {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .marketing-section {
+    padding: 20px;
+  }
+
+  .section-header {
+    margin: 20px;
+  }
+
+  .content-item {
+    margin: 20px 0;
+  }
+
+  .text-wrapper button {
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

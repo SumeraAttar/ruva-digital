@@ -1,0 +1,63 @@
+.arrow-containerTwo {
+  margin-left: 660px !important;
+  margin-top: 210px !important;
+  display: flex;
+  align-items: center;
+}
+
+.path {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  animation: dash 3s linear forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.dashed {
+  stroke-dasharray: 17, 15;
+  animation: dash 3s linear forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+@keyframes move-arrow {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+.arrow-head {
+  animation: move-arrow 3s linear forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.9s;
+
+  offset-path: path("M0,620,C0,620 177,620 195,336,C214,130 350,1005 0,-320");
+  fill: black;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+@media (max-width: 1024px) {
+  .arrow-containerTwo {
+    display: none; /* Hide the entire container */
+  }
+}

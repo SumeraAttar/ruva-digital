@@ -1,0 +1,47 @@
+.arrow-container {
+  margin-left: -90px !important;
+  margin-top: -140px !important;
+  display: flex;
+  align-items: center;
+}
+
+.path {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: dash 3s linear forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.dashed {
+  stroke-dasharray: 6, 12;
+  animation: dash 3s linear forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+@keyframes move-arrow {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+.arrow-head {
+  animation: move-arrow 3s linear forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.9s;
+  offset-path: path("M620,0 C620,0 620,177 336,195 C130,214 1005,350 -320,0");
+  fill: black;
+}
+
+@media (max-width: 1024px) {
+  .arrow-container {
+    display: none; /* Hide the entire container */
+  }
+}

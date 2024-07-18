@@ -1,0 +1,47 @@
+.arrow-containerThree {
+  margin-left: -216px !important;
+  margin-top: -75px !important;
+  display: flex;
+  align-items: center;
+}
+
+.path {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: dash 3s linear forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.dashed {
+  stroke-dasharray: 6, 12;
+  animation: dash 3s linear forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+@keyframes move-arrow {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+.arrow-head3 {
+  animation: move-arrow 3s linear forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.7s !important;
+  offset-path: path("M0,0 C20,0 0,177 284,195 C490,214 -285,350 800,-150");
+  fill: black;
+}
+
+@media (max-width: 1024px) {
+  .arrow-containerThree {
+    display: none; /* Hide the entire container */
+  }
+}

@@ -1,0 +1,164 @@
+/* Slogan.css */
+
+.slogan-section {
+  text-align: center;
+  /* padding: 50px 20px; */
+  margin: 81px;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.slogan-content {
+  margin-bottom: 20px;
+}
+
+.slogan h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #171616;
+}
+
+.slogan p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #0c0c0c;
+}
+
+.slogan-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slogan-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .slogan-section {
+    padding: 40px 20px;
+    margin: 20px;
+  }
+
+  .slogan h1 {
+    font-size: 42px;
+  }
+
+  .slogan p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slogan-section {
+    padding: 30px 20px;
+    margin: 20px;
+  }
+
+  .slogan h1 {
+    font-size: 36px;
+  }
+
+  .slogan p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slogan-section {
+    padding: 20px 10px;
+    margin: 10px;
+  }
+
+  .slogan h1 {
+    font-size: 28px;
+  }
+
+  .slogan p {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+.map-container {
+  position: relative;
+}
+
+.map-image {
+  width: 100%;
+  max-width: 800px; /* Adjust based on your preference */
+  height: auto;
+}
+
+.animated-ball {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+ /* You can change the color as needed */
+}
+
+.ball1 {
+  animation: moveBall1 4s infinite;
+  top: 10%; /* Adjust starting point */
+  left: 50%; /* Adjust starting point */
+  background-color: red; 
+}
+
+.ball2 {
+  animation: moveBall2 4s infinite;
+  top: 10%; /* Adjust starting point */
+  left: 50%; /* Adjust starting point */
+  background-color:blue ; 
+}
+
+.ball3 {
+  animation: moveBall3 4s infinite;
+  top: 10%; /* Adjust starting point */
+  left: 50%; /* Adjust starting point */
+  background-color: blueviolet; 
+}
+
+@keyframes moveBall1 {
+  0% {
+    top: 10%; /* Starting point */
+    left: 50%; /* Starting point */
+  }
+  100% {
+    top: 52%; /* Ending point */
+    left: 69%; /* Ending point */
+  }
+}
+
+@keyframes moveBall2 {
+  0% {
+    top: 10%; /* Starting point */
+    left: 50%; /* Starting point */
+  }
+  100% {
+    top: 32%; /* Ending point */
+    left: 30%; /* Ending point */
+  }
+}
+
+@keyframes moveBall3 {
+  0% {
+    top: 10%; /* Starting point */
+    left: 50%; /* Starting point */
+  }
+  100% {
+    top: 30%; /* Ending point */
+    left: 50%; /* Ending point */
+  }
+}

@@ -1,0 +1,255 @@
+.color {
+  background-color: hsl(0, 7%, 0%);
+}
+
+.semi {
+  width: 80px;
+  height: 155px;
+  background-color: rgb(128, 139, 224);
+  border-radius: 150px 0 0 150px;
+  position: absolute;
+  top: 6.8%;
+  left: 0%;
+}
+
+.semi1 {
+  width: 100px;
+  height: 190px;
+  background-color: rgb(122, 231, 128);
+  border-radius: 0 150px 150px 0;
+  position: absolute;
+  top: 0%;
+  left: 12.3%;
+}
+
+.poly9 {
+  position: absolute;
+  top: 0%;
+  left: 60%;
+  width: 100px;
+  height: 80px;
+  padding: 50px;
+  border-radius: 70% 0 70% 0;
+  background-color: rgb(198, 44, 129);
+  z-index: 1;
+}
+
+.poly10 {
+  position: absolute;
+  top: 16%;
+  left: 60%;
+  width: 120px;
+  height: 110px;
+  padding: 30px 20px;
+  border-bottom-left-radius: 400px;
+  border-bottom-right-radius: 400px;
+  background-color: rgb(128, 139, 224);
+}
+
+.poly11 {
+  width: 150px;
+  height: 406px;
+  position: absolute;
+  top: 36%;
+  left: 53%;
+  border-top-left-radius: 400px;
+  border-top-right-radius: 400px;
+  background-color: rgb(122, 231, 128);
+}
+
+.poly12 {
+  height: 250px;
+  width: 150px;
+  position: absolute;
+  top: 10%;
+  left: 29%;
+  border-top-left-radius: 400px;
+  border-top-right-radius: 400px;
+  background-color: rgba(235, 107, 68, 1);
+}
+
+.ii {
+  position: absolute;
+  top: 33%;
+  left: 0%;
+}
+
+.iii {
+  position: absolute;
+  top: 67%;
+  left: 8%;
+  border-radius: 120px 120px 120px 0;
+  z-index: 1;
+}
+
+.square {
+  width: 112px;
+  height: 110px;
+  background-color: blue;
+  position: absolute;
+  left: 20.5%;
+  top: 33.8%;
+  border: 1px solid blue;
+}
+
+.circle {
+  width: 108px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: rgb(128, 139, 224);
+  position: absolute;
+  left: 11%;
+  top: 34%;
+}
+
+.sq {
+  width: 60px;
+  height: 60px;
+  border: 1px solid blue;
+  position: absolute;
+  top: 42%;
+  left: 19%;
+  background-color: blue;
+}
+
+.tri {
+  width: 100px;
+  height: 100px;
+  border-radius: 0 400px 400px;
+  background-color: rgb(222, 148, 206);
+  position: absolute;
+  top: 51%;
+  left: 29%;
+}
+
+.p {
+  font-weight: 900;
+}
+
+.sq1 {
+  width: 138px;
+  height: 110px;
+  border: 1px solid rgb(123, 123, 160);
+  position: absolute;
+  top: 66%;
+  left: 10%;
+  background-color: rgb(115, 130, 244);
+}
+
+.sq2 {
+  width: 100px;
+  height: 104px;
+  border: 1px solid rgb(198, 44, 129);
+  position: absolute;
+  top: 85.6%;
+  left: -5%;
+  background-color: rgb(198, 44, 129);
+}
+
+.sq3 {
+  width: 100px;
+  height: 104px;
+  border: 1px solid rgb(123, 123, 160);
+  position: absolute;
+  top: 85.6%;
+  left: 37.8%;
+  background-color: rgb(77, 159, 179);
+  border-radius: 0 40px 0 0;
+}
+
+.btn2 {
+  background-color: #FD7D5B;
+  border-radius: 35px;
+}
+
+.section1 {
+  background-color: #FEEEEE;
+  border-top-left-radius: 45px !important;
+  border-top-right-radius: 45px !important;
+}
+
+.focus {
+  background-color: rgb(234, 221, 219);
+  border: 0;
+  border-bottom: 1.4px solid rgba(184, 184, 224, 0.667);
+  border-radius: 0;
+}
+
+textarea {
+  background-color: rgb(234, 221, 219);
+  border: 1.4px solid rgba(184, 184, 224, 0.667);
+}
+
+label, .pp {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btnb {
+  background-color: rgba(235, 107, 68, 1);
+  border-radius: 25px;
+  font-size: 22px;
+  color: white;
+  font-weight: 900;
+  border: 1px solid rgba(235, 107, 68, 1);
+}
+
+.img11 {
+  position: absolute;
+  left: 12px;
+  animation: test 3s linear 0.2s infinite alternate-reverse;
+}
+
+.img12 {
+  position: absolute;
+  left: 12px;
+  animation: test1 3s linear 0.2s infinite alternate-reverse;
+}
+
+.img13 {
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  animation: test2 3s linear 0.2s infinite alternate-reverse;
+}
+
+@keyframes test2 {
+  from {
+      top: 0px;
+  }
+  to {
+      top: 123px;
+  }
+}
+
+@keyframes test {
+  from {
+      top: 0px;
+  }
+  to {
+      top: 100px;
+  }
+}
+
+@keyframes test1 {
+  from {
+      top: 220px;
+  }
+  to {
+      top: 290px;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 991.98px) {
+  .col-lg-4, .col-lg-6, .col-lg-5, .col-lg-10 {
+      max-width: 100% !important;
+      flex: 0 0 100% !important;
+  }
+  .poly9, .poly10, .poly11, .poly12, .ii, .iii, .square, .circle, .sq, .tri, .sq1, .sq2, .sq3 {
+      display: none;
+  }
+  .text-lg-start {
+      text-align: center !important;
+  }
+}

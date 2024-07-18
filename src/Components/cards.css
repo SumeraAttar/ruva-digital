@@ -1,0 +1,30 @@
+.cards-container {
+  background-image: url("slider.png"); /* Replace 'your-background-image.jpg' with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; /* Ensure position is relative for absolute positioning of cards */
+  overflow: hidden; /* Hide overflowing cards */
+}
+
+.card {
+  animation: rotateCard 10s linear infinite;
+}
+
+@keyframes moveAround {
+  0% {
+    transform: rotate(0deg) translateY(-150px) rotate(0deg); /* Adjust the translateY value to change distance from center */
+  }
+  100% {
+    transform: rotate(360deg) translateY(-150px) rotate(-360deg);
+  }
+}
+
+@keyframes rotateCard {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

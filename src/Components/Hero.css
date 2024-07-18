@@ -1,0 +1,318 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  padding: 0 20px;
+  background: #fff;
+  position: relative;
+  /* margin-top: 20px; */
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.Logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  display: block;
+  align-items: center;
+  justify-content: last baseline;
+}
+.ruvaName {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 140px;
+}
+
+.ruvaName h3 {
+  display: flex;
+  font-weight: bold;
+}
+
+.ruvaName h3 span {
+  margin-right: 10px;
+}
+
+.ruvaName p {
+  margin-top: -12px;
+}
+
+.text-content {
+  flex: 1;
+  padding: 0 100px;
+  margin-top: 0px;
+  /* margin-top: 290px;
+    margin-left: 270px; */
+}
+
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.watch-video-btn {
+  background-color: #ff5a5f;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+}
+
+.watch-video-btn:hover {
+  background-color: #e04e4e;
+}
+
+.image-content {
+  flex: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.shape {
+  width: 250px;
+  height: 600px;
+  background-color: #4b0082;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  margin-right: 80px;
+}
+
+.shape-inner,
+.shape-inner1,
+.shape-inner2,
+.shape-inner3,
+.shape-inner4,
+.shape-inner5 {
+  width: 100px;
+  height: 240px;
+  background-color: #fd7d5b;
+  border-radius: 75px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.shape-inner1 {
+  top: 1px;
+  left: 0;
+  background-color: #fd7d5b;
+}
+
+.shape-inner2 {
+  top: 200px;
+  left: 0;
+  background-color: #93d26f;
+}
+
+.shape-inner3 {
+  top: 0;
+  left: 0;
+  background-color: #93d26f;
+}
+
+.shape-inner4 {
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 140px;
+  background-color: #e26c9d;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+}
+
+.shape-inner5 {
+  top: 0;
+  left: 140px;
+  width: 120px;
+  height: 200px;
+  background-color: #fa3c1a;
+}
+
+.circular-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  animation: moveUpDown 5s infinite alternate;
+}
+
+.circularimage {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+
+.circularimage1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+@keyframes moveUpDown {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: calc(100% - 100px);
+  }
+}
+
+.shape2 {
+  width: 220px;
+  height: 500px;
+  background-color: #ff1493;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  position: absolute;
+  top: 0;
+  left:300px;
+ 
+  z-index: 0;
+}
+
+.arrow-container {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .ruvaName {
+    margin-left: 50px;
+  }
+
+  .ruvaName h3 span {
+    margin-right: 3px;
+  }
+
+  .hero h1 {
+    font-size: 25px;
+  }
+
+  .hero p {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  .watch-video-btn {
+    padding: 14px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+
+  .arrow-container {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .arrow-container {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content {
+    padding: 0;
+    text-align: center;
+  }
+
+  .image-content {
+    justify-content: center;
+  }
+
+  .shape {
+    width: 200px;
+    height: 400px;
+  }
+
+  .shape2 {
+    width: 200px;
+    height: 400px;
+    left: 40px;
+  }
+
+  .shape-inner,
+  .shape-inner1,
+  .shape-inner2,
+  .shape-inner3,
+  .shape-inner4,
+  .shape-inner5 {
+    width: 50px;
+    height: 132px;
+  }
+
+  .circular-image,
+  .circularimage,
+  .circularimage1 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .circularimage {
+    width: 150px;
+    height: 150px;
+    right: 25px;
+  }
+
+  .circularimage1 {
+    width: 120px;
+    height: 120px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ruvaName {
+    margin-left: 20px;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 10px;
+  }
+
+  .watch-video-btn {
+    padding: 10px 5px;
+    font-size: 10px;
+  }
+}
